@@ -3,6 +3,57 @@
     <head>
         <meta charset = "utf-8">
         <title> Jorge Loredo Meléndez</title>
+        <!-- #idid, ID solo se pueden usar una vez -->
+        <!-- .clase, Claes se pueden usar varias veces -->
+        <!-- p.big, Todos los p de la clase Big -->
+        <!-- article > p, todos los direct childs p de article-->
+        <!-- article p, todos los p dentro de articles en cualquier lugar-->
+
+        <style>
+            .clase{
+                opacity: 0.7;
+                color : purple;
+                font-size : 24px;
+                background-color: pink;
+                text-align: center;
+                font-weight: bold;
+            }
+            
+            #idid{   
+                font-style: italic;
+                color: teal;
+                font-size : 20px;
+            }
+            h1{
+                color: blue;
+                font-style: italic;
+            }
+            ul.lista li{
+                color : black;
+                list-style: none;
+                text-decoration: none;
+                background-color: green;
+                border: 1px solid white;
+                display: block;
+                width: 200px;
+                text-align: center;
+                margin-bottom:2px;
+            }
+            ul.lista li:nth-child(2){
+                font-size: 24px;
+            }
+            ul.lista li:hover, ul.lista li:active{
+                color: red;
+            }
+            section#palabras div:nth-child(odd){
+                background-color: grey;
+            }
+            section#palabras div:hover{
+                background-color: pink;
+                cursor : pointer;
+            }
+
+        </style>
     </head>
     <body>
         <h1>Aprendiendo sobre web pages</h1>
@@ -24,7 +75,7 @@
                 </ul>
             </article>
             <article>¿Qué es Jorge</article>
-            <div>Un diosaso, a veces ser humano y muy pocas veces animal</div>
+            <div id = "idid">Un diosaso, a veces ser humano y muy pocas veces animal</div>
         </section>
         <section>
             <br>
@@ -37,7 +88,7 @@
             a través de la experimentación&quot; 
         </p>
         <dir>En otras palabras</dir>
-        <dir> Jorge &gt; Otros Humanos &gt; Pepa &gt; Valencia &amp; Derivados</dir>
+        <dir class = "clase"> Jorge &gt; Otros Humanos &gt; Pepa &gt; Valencia &amp; Derivados</dir>
         <br>
             <a href = "https://tec.mx/es/noticias/monterrey/educacion/escribe-microrrelato-para-clase-y-triunfa-con-el-en-espana"
             target="_blank" title= "Dale like">Picale aquí también pa</a>
@@ -49,34 +100,32 @@
         <img src = "dr simi.jpg" width = "320" height="320" alt="Picture with quote">
         <br>
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <section>
+            <ul class = "lista">
+                <li>Si pasas el mouse brillo</li>
+                <li>Si pasas el mouse brillo</li>
+                <li>Si pasas el mouse brillo</li>
+            </ul>
+        </section>
         <section id = "section1">
             Aquí te lleva
         </section>
         <br>
-
+        <section id = "palabras">
+        <h2>Mis palabras favoritas</h2>
+        <br>
+        <div>Organigrama</div>
+        <div>Ornitorrinco</div>
+        <div>Espátula</div>
+        <div>Masaje</div>
+        <div>Chuty</div>
+        <div>Carrocería</div>
+        <div>Motor</div>
+        <div>Diversión</div>
+        <div>Agua</div>
+        <div>Patín Eléctrico</div></section>
+        <br>
+        <br>
         <aside>
             El Congreso Nacional de Trabajadores de la radio &copy; Copyright
         </aside>
