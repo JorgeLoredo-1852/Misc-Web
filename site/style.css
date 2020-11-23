@@ -82,3 +82,21 @@ section#palabras div:hover{
     margin:20px;
     width: 290px;
 }
+img{
+    width : 320px;
+    height: 320px;
+}
+
+@media (min-width : 1200 px){
+    #img1{
+        width : 640px;
+        height : 640px;
+    }
+}
+
+@media (min-width : 900 px) and (max-width : 1199px){
+    #img1{
+        width : 160px;
+        height : 5160px;
+    }
+}
