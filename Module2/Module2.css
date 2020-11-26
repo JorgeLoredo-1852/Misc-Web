@@ -30,6 +30,7 @@
     padding: 10px;
     clear: both;
     height: 250px;
+    overflow: auto;
 }
 
 #box2{
@@ -46,6 +47,7 @@
     padding: 10px;
     clear: both;
     height: 250px;
+    overflow: auto;
 }
 
 #box3{
@@ -62,6 +64,7 @@
     padding: 10px;
     clear: both;
     height: 250px;
+    overflow: auto;
 }
 
 @media (min-width : 992px){
