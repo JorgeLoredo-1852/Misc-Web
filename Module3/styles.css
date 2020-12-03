@@ -1,0 +1,19 @@
+body { 
+    font-size: 16px;
+    color: #fff;
+    background-color: #24338a;
+    font-family: 'Cochin', sans-serif;
+}
+
+#header-nav{
+    background-color: #5761ec;
+    border-radius: 0;
+    border: 0;
+}
+
+#logo-img{
+    background: url('..images/Doctor.png') no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 10px 15px 10px 0
+}
