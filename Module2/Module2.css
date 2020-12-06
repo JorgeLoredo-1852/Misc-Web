@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+#bodyy{
+    background-color: rgb(130, 255, 228);
+}
+.row{
+    size: 100%;
+    margin :40px;
+}
+
+#titulo{
+    margin: 30px;
+    text-align: center;
+}
+
+#box1{
+    width: 120px;
+    border: 1px solid black;
+    padding : 5px;
+    background-color: rgb(198, 117, 255);
+    position: relative; 
+    text-align: center;
+    float: right;
+    font-size: 120%;
+}
+#para1{
+    padding: 10px;
+    clear: both;
+    height: 250px;
+    overflow: auto;
+}
+
+#box2{
+    width :120px;
+    border: 1px solid black;
+    padding :5px;
+    background-color: greenyellow;
+    position: relative; 
+    text-align: center;
+    float: right;
+    font-size: 120%;
+}
+#para2{
+    padding: 10px;
+    clear: both;
+    height: 250px;
+    overflow: auto;
+}
+
+#box3{
+    width: 120px;
+    border: 1px solid black;
+    padding : 5px;
+    background-color: rgb(236, 163, 102);
+    position: relative; 
+    text-align: center;
+    float: right;
+    font-size: 120%;
+}
+#para3{
+    padding: 10px;
+    clear: both;
+    height: 250px;
+    overflow: auto;
+}
+
+@media (min-width : 992px){
+    .big{
+        float:left;
+        border: 1px solid black;
+        width :30%;
+        margin: 10px;
+    }
+}
+
+@media (min-width : 768px) and (max-width : 991px){
+    .medium #s1, .medium #s2{
+        float:left;
+        border: 1px solid black;
+        width : 40%;
+        margin: 10px;
+    }
+
+    .medium #s3{
+        float:left;
+        border: 1px solid black;
+        width : 83%;
+        margin: 10px;
+    }
+    #box3{
+        width: 120px;
+        border: 1px solid black;
+        padding : 5px;
+        background-color: rgb(236, 163, 102);
+        position: relative; 
+        text-align: center;
+        float: right;
+        font-size: 120%;
+    }
+    #para3{
+        width: 100%;
+        padding: 10px;
+        clear: both;
+        height: 150px;
+    }
+}
+
+@media (max-width : 767px){
+    .little{
+        float:left;
+        border: 1px solid black;
+        width : 100%;
+        margin: 10px;
+    }
+
+    
+}
+
