@@ -73,3 +73,40 @@ function doOperation (x, operation){
 
 var result = doOperation(7, powerOf3);
 console.log(result);
+
+//Copy by value and copy by reference
+
+var a = 7;
+var b = a;
+console.log("a: " + a);
+console.log("b: " + b);
+b = 5;
+console.log("afer b update: ");
+console.log("a: " + a);
+console.log("b: " + b);
+
+var c = {x: 7};
+var d = c;
+console.log(c);
+console.log(d);
+
+d.x = 2;
+console.log("after d.x update: ");
+console.log(c);
+console.log(d);
+
+//Object Constructor
+
+function Circle(radius){
+    this.radius = radius;
+}
+Circle.prototype.getArea =
+    function (){
+        return Math.PI * Math.pow(this.radius, 2);
+    };
+
+var myCircle = new Circle(10);
+console.log(myCircle.getArea());
+
+var myOtherCircle = new Circle(5);
+console.log(myOtherCircle);
