@@ -110,3 +110,21 @@ console.log(myCircle.getArea());
 
 var myOtherCircle = new Circle(5);
 console.log(myOtherCircle);
+
+//Arrays
+
+var names = ["Cesar", "Julio", "Alessio"];
+for (i =0; i<names.length; i++){
+    console.log(names[i]);
+}
+
+var names2 = {
+    name1: "John",
+    name2: "Sandra",
+    name3: "Mowlihawk"
+};
+
+for(var prom in names2){
+    console.log(names2[prom]);
+}
+
