@@ -13,5 +13,13 @@ document.addEventListener("DOMContentLoaded",
         }
         document.querySelector("button").addEventListener("click",sayHello);
         //document.querySelectro("button").onclick = sayHello;
+        document.querySelector("body").addEventListener("mousemove",
+            function(event){
+                if(event.shiftKey === true){
+                    console.log("x: " + event.clientX);
+                    console.log("y: " + event.clientY);
+                }
             }
+        );    
+    }
 );
