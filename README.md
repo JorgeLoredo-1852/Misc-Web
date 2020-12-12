@@ -1,4 +1,4 @@
-# Website-Projects
+# Examples and tasks
 
 HTML, CSS and Javascript Course on Coursera
 &
