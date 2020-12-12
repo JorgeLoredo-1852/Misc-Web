@@ -1,24 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import CommentDetails from './CommentDetails';
 
 const App = function () {
     return (
         <div className = "container-fluid">
             <div className = "row">
-                <div className = "col-md">
-                    <div class="card">
-                        <div class="card-horizontal">
-                            <div class="img-square-wrapper">
-                                <img class="" src="logo192.png" alt="Card image cap"/>
-                            </div>
-                            <div class="card-body">
-                                <h4 class="card-title">Sam Fernandez</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <div class= "card-text float-right">Today at 6:00PM</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <CommentDetails author="Alejandro Valencia" mensaje = "No sabes cuantas ganas tengo de poder ganar una batalla de Freestyle" hora = "Hoy a las 8:00PM" imagen = "img/Valencia.jpg"/>
+                <CommentDetails author="Jorge Loredo" mensaje = "Sin duda la Red Bull 2020 se la lleva skone poque le ganó a todos los de España" hora = "Ayer a las 6:00PM" imagen = "img/Jorge.jpg"/>
+                <CommentDetails author= "Cesar Acarrea" mensaje = "Yo sigo ardido porque Gazir y MP perdieron cuando les hicieron tongo" hora= "Hoy a las 7:00PM" imagen = './img/Cesar.jpg'/>
+                <CommentDetails author= "Julio Reyes" mensaje = "Amo Sacbe más que a mi hermana, aunque mi hermana esté en Sacbé" hora = "Ayer a las 6:00PM" imagen = "img/Julio.jpg"/>
+                <CommentDetails author= "Portilla Ramírez" mensaje = "Estoy completamente mamadísimo soy una arma en carne y hueso" hora = "Hoy ahorita en corto" imagen = "img/Portilla.jpg"/>
             </div>
         </div>
     );
