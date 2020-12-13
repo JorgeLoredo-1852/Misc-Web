@@ -2,8 +2,6 @@ import React from 'react';
 
 const CommentDetails = function (props) {
     return(
-        <div className = "col-lg-6">
-            <div class="card">
                 <div class="card-horizontal">
                     <div class="img-square-wrapper">
                         <img className="rounded-circle" src={props.imagen} alt="Card image cap"/>
@@ -14,8 +12,6 @@ const CommentDetails = function (props) {
                         <div class= "card-text float-right">{props.hora}</div>
                     </div>
                 </div>
-            </div>
-        </div>
     );
 }
 
