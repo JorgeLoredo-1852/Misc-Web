@@ -9,19 +9,13 @@ import SeasonDetails from './SeasonDetails';
 class App extends React.Component{
 
     //El constructor se encarga de inicializar "State"
-    constructor(props){
+    //También lo puedo inicializar 
+    /*constructor(props){
         super(props);
         this.state = {lat:null, errorMessage :''};
-        
-        window.navigator.geolocation.getCurrentPosition(
-            (position) => {
-                this.setState({lat:position.coords.latitude});
-            },
-            (err) => {
-                this.setState({errorMessage:err.message});
-            }
-        );
-    }
+    }*/
+
+    state = {lat:null, errorMessage:''};
 
     //Cada vez que el componente se actualiza por ejemplo
     //this.setState
@@ -34,7 +28,14 @@ class App extends React.Component{
     //Primera vez que el contenido carga
     //Por convención aquí es dónde hay data-loading
     componentDidMount(){
-
+        window.navigator.geolocation.getCurrentPosition(
+            (position) => {
+                this.setState({lat:position.coords.latitude});
+            },
+            (err) => {
+                this.setState({errorMessage:err.message});
+            }
+        );
     }
 
     //Cuando el componente es destruido, se utiliza más para limpieza
@@ -54,7 +55,7 @@ class App extends React.Component{
         else if(this.state.lat && !this.state.errorMessage){
             return(
                 <div>
-                    Latitude: {this.state.lat}
+                    <SeasonDetails lat={this.state.lat}/>
                 </div>
             );
         }
