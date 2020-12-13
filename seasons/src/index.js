@@ -2,17 +2,68 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import SeasonDetails from './SeasonDetails';
 
+
+//A diferencia de una función, una clase se encarga de tareas asincrónicas
+//Por ejemplo, recuperar la ubicación del usuario o actualizar después de cada evento
+
 class App extends React.Component{
-    render(){
+
+    //El constructor se encarga de inicializar "State"
+    constructor(props){
+        super(props);
+        this.state = {lat:null, errorMessage :''};
+        
         window.navigator.geolocation.getCurrentPosition(
-            function (position) {
-                console.log(position);
+            (position) => {
+                this.setState({lat:position.coords.latitude});
             },
-            function (err){
-                console.log(err);
+            (err) => {
+                this.setState({errorMessage:err.message});
             }
         );
-        return <div>Latitude : </div>
+    }
+
+    //Cada vez que el componente se actualiza por ejemplo
+    //this.setState
+    //Buen lugar para Data-Loading cada vez que algo se actualiza
+    componentDidUpdate(){
+
+    }
+
+
+    //Primera vez que el contenido carga
+    //Por convención aquí es dónde hay data-loading
+    componentDidMount(){
+
+    }
+
+    //Cuando el componente es destruido, se utiliza más para limpieza
+    componentWillUnmount(){
+
+    }
+
+    //La función de render es solamente regresar JSX
+    render(){
+        if(!this.state.lat && this.state.errorMessage){
+            return(
+                <div>
+                    Error: {this.state.errorMessage}
+                </div>
+            );
+        }
+        else if(this.state.lat && !this.state.errorMessage){
+            return(
+                <div>
+                    Latitude: {this.state.lat}
+                </div>
+            );
+        }
+
+        return (
+        <div>
+            Loading...
+        </div>
+        );
     }
 }
 
