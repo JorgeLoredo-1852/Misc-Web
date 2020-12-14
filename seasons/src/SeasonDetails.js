@@ -1,4 +1,6 @@
+import './styles.css';
 import React from 'react';
+
 
 const getSeason  = (lat,month) =>{
 console.log(lat);

@@ -22,3 +22,8 @@ img{
     height: 250px;
     width: 250px;
 }
+
+.mesa{
+    clear: both;
+    position: relative;
+}

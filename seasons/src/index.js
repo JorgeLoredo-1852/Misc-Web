@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import LoadingSpinner from './LoadingSpinner';
 import SeasonDetails from './SeasonDetails';
 
 
@@ -43,27 +44,31 @@ class App extends React.Component{
 
     }
 
+    renderAux(){
+        if(!this.state.lat && this.state.errorMessage){
+                    return(
+                        <div>
+                            Error: {this.state.errorMessage}
+                        </div>
+                    );
+                }
+                else if(this.state.lat && !this.state.errorMessage){
+                    return(
+                        <div>
+                            <SeasonDetails lat={this.state.lat}/>
+                        </div>
+                    );
+                }
+
+                return (
+                <LoadingSpinner message= "Acepta tu dirección"/>
+                );
+    }
+
     //La función de render es solamente regresar JSX
     render(){
-        if(!this.state.lat && this.state.errorMessage){
-            return(
-                <div>
-                    Error: {this.state.errorMessage}
-                </div>
-            );
-        }
-        else if(this.state.lat && !this.state.errorMessage){
-            return(
-                <div>
-                    <SeasonDetails lat={this.state.lat}/>
-                </div>
-            );
-        }
-
-        return (
-        <div>
-            Loading...
-        </div>
+        return(
+            <div style = {{border: '2px solid red', padding: "0px"}}>{this.renderAux()}</div>
         );
     }
 }
