@@ -1,5 +1,6 @@
 import React from 'react';
 import unsplash from '../Api/unsplash';
+import ImagesList from './ImagesList';
 import SearchBar from './SearchBar';
 
 class App extends React.Component{
@@ -7,6 +8,7 @@ class App extends React.Component{
     whenSubmitted = async (term) => {
         const response = await unsplash.get('/search/photos',{params:{query:term}})
         this.setState({imagesList: response.data.results});
+        console.log(this.state);
     }
 
     render(){
@@ -15,9 +17,9 @@ class App extends React.Component{
                 <div className = 'row'>
                     <div className = "col">Found {this.state.imagesList.length} Images </div>
                     <SearchBar onSubmit = {this.whenSubmitted}/>
-                     
                     <div className = "col"></div>
                 </div>
+                <ImagesList images = {this.state.imagesList}/>
             </div>
         );
     }
