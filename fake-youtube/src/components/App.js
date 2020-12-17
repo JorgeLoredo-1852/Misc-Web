@@ -5,7 +5,7 @@ import VideosList from './VideosList';
 
 class App extends React.Component{
 
-    state = {videos : []};
+    state = {videos : [], selectedVideo : null};
 
     onSearchTerm = async (term) => {
         const list = await youtube.get('/search',
@@ -14,11 +14,21 @@ class App extends React.Component{
         this.setState({videos : list.data.items});
     } 
     
+    onVideoSelect = (video) => {
+        console.log(video);
+    }
+
     render(){
         return(
-            <div className = 'container'>
-                <SearchBar onSearchTerm = {this.onSearchTerm}/>
-                <VideosList videos = {this.state.videos}/>
+            <div>
+                <div className = 'container'>
+                    <SearchBar onSearchTerm = {this.onSearchTerm}/>   
+                    <div className = 'row' style={{margin: '20px'}}>
+                        <div className = 'col-7'></div>
+                        <VideosList onVideoSelect = {this.onVideoSelect} videos = {this.state.videos}/>
+                    </div>
+                </div>
+
             </div>
         );
     }
