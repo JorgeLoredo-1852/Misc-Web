@@ -20,7 +20,7 @@ const items = [
 
 const App = () =>{
     return(
-        <div>
+        <div style={{padding:"10px"}}>
             <Search/>
         </div>
     );
