@@ -38,11 +38,13 @@ const Search = () =>{
     
     const renderedResults = results.map( (result) => {
         return(
-            <div key = {result.pageid} className= "row" style={{margin:"10px",border:"1px solid black"}}>
-                <div style={{padding:"10px"}}>
-                    <a href= {"https://en.wikipedia.org?curid=" + result.pageid} type="button" class="btn-lg btn-outline-dark float-right">Go</a>
-                    <div className="title" style={{fontSize:"1.3em",fontWeight:"bolder"}}>{result.title}</div>
-                    <div className="content" style={{paddingRight:"100px"}}>{result.snippet}</div>
+            <div style={{padding:"10px"}}>
+                <div key = {result.pageid} className= "row" style={{margin:"10px",border:"1px solid black"}}>
+                    <div style={{padding:"10px"}}>
+                        <a href= {"https://en.wikipedia.org?curid=" + result.pageid} type="button" class="btn-lg btn-outline-dark float-right">Go</a>
+                        <div className="title" style={{fontSize:"1.3em",fontWeight:"bolder"}}>{result.title}</div>
+                        <div className="content" style={{paddingRight:"100px"}}>{result.snippet}</div>
+                    </div>
                 </div>
             </div>
         );
