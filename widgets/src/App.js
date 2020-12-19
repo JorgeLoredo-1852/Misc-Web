@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import Accordion from './components/Accordion';
 import Search from './components/Search';
 import Dropdown from './components/Dropdown';
+import Translate from './components/Translate';
 
 const items = [
     {
@@ -36,12 +37,12 @@ const colorOptions = [
 
 const App = () =>{
 
-    const [selection, setSelection] = useState(colorOptions[0]);
-    const [visDropdown, setVisDropdown] = useState(true);
+ //   const [selection, setSelection] = useState(colorOptions[0]);
+ //  const [visDropdown, setVisDropdown] = useState(true);
 
     return(
         <React.Fragment>
-        
+            <Translate/>
         </React.Fragment>
     );
 }

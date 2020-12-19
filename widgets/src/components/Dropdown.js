@@ -1,6 +1,6 @@
 import React, { useState , useEffect, useRef } from 'react';
 
-const Dropdown = ({selection, onSelectChange, options}) => {
+const Dropdown = ({selection, onSelectChange, options, label}) => {
 
     const [openTag, setOpenTag] = useState(false);
     const ref = useRef();
@@ -34,13 +34,15 @@ const Dropdown = ({selection, onSelectChange, options}) => {
     });
 
     return (
-        <div ref={ref} style={{border: "1px solid black"}}>
-            <div type="button" onClick = {()=>setOpenTag(!openTag)}>
-                <a class="btn dropdown-toggle float-right"  id="dropdownMenuButton" data-toggle="dropdown"></a>
-                <span value = {selection.value} className="dropdown-item-text">{selection.label}</span>
-            </div>
-            <div className= {openTag ? "" : "collapse"}>
-                {renderedColors}
+        <div>{label}
+            <div ref={ref} style={{border: "1px solid black"}}>
+                <div type="button" onClick = {()=>setOpenTag(!openTag)}>
+                    <a class="btn dropdown-toggle float-right"  id="dropdownMenuButton" data-toggle="dropdown"></a>
+                    <span value = {selection.value} className="dropdown-item-text">{selection.label}</span>
+                </div>
+                <div className= {openTag ? "" : "collapse"}>
+                    {renderedColors}
+                </div>
             </div>
         </div>
     );

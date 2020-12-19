@@ -4,6 +4,7 @@ import axios from 'axios';
 const Search = () =>{
     const [term, setTerm] = useState('programming');
     const [results, setResults] = useState([]);
+    
 
     useEffect(()=>{
         const search = async () => {
