@@ -1,8 +1,25 @@
-import React,{useState} from 'react';
+import React, { useState , useEffect, useRef } from 'react';
 
 const Dropdown = ({selection, onSelectChange, options}) => {
 
     const [openTag, setOpenTag] = useState(false);
+    const ref = useRef();
+
+    useEffect(()=>{
+
+        const onBodyClick = (event) =>{
+            if(ref.current && ref.current.contains(event.target)){
+                return;
+            }
+            setOpenTag(false);
+        }
+
+        document.body.addEventListener('click', onBodyClick);
+
+        return (()=>{
+            document.body.removeEventListener('click',onBodyClick);
+        });
+    },[]);
 
     const renderedColors = options.map((color) =>{
 
@@ -17,7 +34,7 @@ const Dropdown = ({selection, onSelectChange, options}) => {
     });
 
     return (
-        <div style={{border: "1px solid black"}}>
+        <div ref={ref} style={{border: "1px solid black"}}>
             <div type="button" onClick = {()=>setOpenTag(!openTag)}>
                 <a class="btn dropdown-toggle float-right"  id="dropdownMenuButton" data-toggle="dropdown"></a>
                 <span value = {selection.value} className="dropdown-item-text">{selection.label}</span>
