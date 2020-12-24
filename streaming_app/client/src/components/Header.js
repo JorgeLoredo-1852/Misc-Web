@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import GoogleAuth from './GoogleAuth';
+
 const Header = () => {
     return(
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -14,7 +16,9 @@ const Header = () => {
                     <Link class="nav-link" to="/">All Streams</Link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link ">Log in</a>
+                    <a class="nav-link ">
+                        <GoogleAuth/>
+                    </a>
                 </li>
             </ul>
         </div>
