@@ -6,7 +6,6 @@ import { createStream } from '../../actions';
 class StreamCreate extends React.Component {
 
     renderInput = (formProps) => {
-        console.log(formProps);
         return (
             <div className="form-group" style={{width:"100%"}}>
                 <div>{formProps.label}</div>
@@ -18,7 +17,7 @@ class StreamCreate extends React.Component {
 
     renderError(meta){
         if(meta.touched && meta.error){
-            return <div class="alert alert-danger" role="alert">{meta.error}</div>
+            return <div className="alert alert-danger" role="alert">{meta.error}</div>
         }
     }
 
@@ -31,7 +30,7 @@ class StreamCreate extends React.Component {
             <form style={{margin:"20px"}} onSubmit={this.props.handleSubmit(this.onSubmitForm)}>
                 <Field name="title" component={this.renderInput} label= "Enter Title"/>
                 <Field name="description" component = {this.renderInput} label="Enter Description"/>
-                <button class="btn btn-outline-primary">Submit</button>
+                <button className="btn btn-outline-primary">Submit</button>
             </form>
         );
     }
