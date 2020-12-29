@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-const streamReducer = (state={}, action) => {
+export default (state={}, action) => {
     switch(action.type){
         case "CREATE_STREAM":
             return {...state, [action.payload.id] : action.payload};

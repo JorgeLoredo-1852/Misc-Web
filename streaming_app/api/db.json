@@ -4,6 +4,11 @@
       "title": "adwda",
       "description": "daw",
       "id": 1
+    },
+    {
+      "title": "Other Stream",
+      "description": "Nice stream bro",
+      "id": 2
     }
   ]
 }
