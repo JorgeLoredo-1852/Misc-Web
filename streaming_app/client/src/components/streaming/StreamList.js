@@ -12,7 +12,7 @@ class StreamList extends React.Component {
         if(stream.userId === this.props.currentUserId){
             return(
                 <div className= "float-right" style={{position:"relative"}}>
-                    <button type="button" className="btn btn-primary btn-lg">EDIT</button>
+                    <Link to={"/stream/edit/"+stream.id} type="button" className="btn btn-primary btn-lg">EDIT</Link>
                     <button type="button" className="btn btn-secondary btn-lg">DELETE</button>
                 </div>
             );
@@ -22,11 +22,11 @@ class StreamList extends React.Component {
     renderList(){
         return( this.props.streams.map((stream)=>{
             return (
-                <a className="list-group-item list-group-item-action" key={stream.id}>
+                <div className="list-group-item list-group-item-action" key={stream.id}>
                    {this.renderButtons(stream)}
                     <h5 className="mb-1">{stream.title}</h5> 
                     <p className="mb-1">{stream.description}</p>
-                </a>
+                </div>
             );
         }));
     }

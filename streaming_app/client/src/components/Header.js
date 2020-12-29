@@ -16,9 +16,7 @@ const Header = () => {
                     <Link className="nav-link" to="/">All Streams</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link ">
                         <GoogleAuth/>
-                    </a>
                 </li>
             </ul>
         </div>
