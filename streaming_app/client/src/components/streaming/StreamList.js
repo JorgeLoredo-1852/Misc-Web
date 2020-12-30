@@ -13,7 +13,7 @@ class StreamList extends React.Component {
             return(
                 <div className= "float-right" style={{position:"relative"}}>
                     <Link to={"/stream/edit/"+stream.id} type="button" className="btn btn-primary btn-lg">EDIT</Link>
-                    <button type="button" className="btn btn-secondary btn-lg">DELETE</button>
+                    <Link to="/stream/delete" type="button" className="btn btn-danger btn-lg">DELETE</Link>
                 </div>
             );
         }
