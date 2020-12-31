@@ -4,7 +4,7 @@ import history from '../history';
 
 const Modal = (props) => {
     return ReactDOM.createPortal(
-      <div onClick={props.dismiss} class="modal fade" id="exampleModal" tabIndex={-1} aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div onClick={props.dismiss} class="" id="exampleModal" tabIndex={-1} aria-labelledby="exampleModalLabel" aria-hidden="false">
           <div onClick={(e)=>e.stopPropagation()} className="modal-dialog">
               <div className="modal-content">
                   <div className="modal-header">
