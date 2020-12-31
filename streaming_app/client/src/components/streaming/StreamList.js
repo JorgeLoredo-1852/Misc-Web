@@ -24,7 +24,7 @@ class StreamList extends React.Component {
             return (
                 <div className="list-group-item list-group-item-action" key={stream.id}>
                    {this.renderButtons(stream)}
-                    <Link to={"/stream/view/"+stream.id} className="mb-1">{stream.title}</Link> 
+                    <Link to={"/stream/"+stream.id} className="mb-1">{stream.title}</Link> 
                     <p className="mb-1">{stream.description}</p>
                 </div>
             );
