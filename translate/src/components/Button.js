@@ -5,9 +5,12 @@ class Button extends React.Component{
     static contextType = LanguageContext;
 
     render(){
-        console.log(this.context);
         return(
-            <button className="ui button primary">Select</button>
+            <button className="ui button primary">
+                <LanguageContext.Consumer>
+                    {(value) => value === "english" ? "Submit" : "Enviar"}
+                </LanguageContext.Consumer>
+            </button>
         );
     }
 }
