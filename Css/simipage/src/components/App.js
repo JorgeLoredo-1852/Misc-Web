@@ -1,10 +1,12 @@
 import React from 'react';
+import './style.css';
+import Header from './Header/Header';
 
 const App = () =>{
     return(
-        <div>
-            App
-        </div>
+        <React.Fragment>
+            <Header/>
+        </React.Fragment>
     );
 };
 
