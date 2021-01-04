@@ -1,0 +1,25 @@
+{
+  "streams": [
+    {
+      "title": "adwda",
+      "description": "daw",
+      "id": 1
+    },
+    {
+      "title": "Other Stream",
+      "description": "Nice stream bro",
+      "id": 2
+    },
+    {
+      "title": "Refactor",
+      "description": "I made this, please enjoy",
+      "id": 3
+    },
+    {
+      "title": "Nice",
+      "description": "nicex2",
+      "userId": "115585698413586396241",
+      "id": 4
+    }
+  ]
+}

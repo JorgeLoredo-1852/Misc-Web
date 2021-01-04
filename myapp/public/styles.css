@@ -1,0 +1,28 @@
+img{
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-left: 10px;
+}
+.row{
+    margin: 20px;
+}
+
+.avatar{
+    position: relative;
+    float: left;
+}
+.author{
+    position: relative;
+}
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+  }
+.card{
+    margin: 10px;
+}
