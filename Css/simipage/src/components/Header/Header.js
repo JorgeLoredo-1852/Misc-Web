@@ -14,10 +14,11 @@ const Header = () =>{
                     <span className="text-primary-main">Dr simi</span>
                     <span className="text-primary-sub">Club de fans oficial</span>
                 </h1>
-                <Button colorType="btn-white"/>
+                
+                <Button classes = "btn btn-white btn-animated"/>
             </div>
         </div>
     );
 };
-
+//<Button additionalClasses = "btn btn-white btn-animated"/>
 export default Header;
