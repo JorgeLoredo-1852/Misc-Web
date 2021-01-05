@@ -14,7 +14,8 @@
 .logo-image{
     height: 60px;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: contrast(180%);;
+    filter: contrast(180%);
+
 }
 
 .logo-image:hover{
@@ -33,7 +34,7 @@
     top: 40%;                           /*in relation of the parent component*/
     left: 50%;
     transform: translate(-50%,-50%);    /*in relation of itself*/
-
+    text-align: center;                 /*Para que el botón se alínee*/
 }
 
 .text-primary{

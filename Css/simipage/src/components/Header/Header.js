@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.css';
 import logo from './logo-simi.png';
+import Button from '../Button/Button';
 
 const Header = () =>{
     return (
@@ -13,6 +14,7 @@ const Header = () =>{
                     <span className="text-primary-main">Dr simi</span>
                     <span className="text-primary-sub">Club de fans oficial</span>
                 </h1>
+                <Button colorType="btn-white"/>
             </div>
         </div>
     );

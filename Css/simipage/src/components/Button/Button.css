@@ -1,0 +1,27 @@
+.btn-white{
+    background-color: white;
+    color: gray;
+}
+
+.btn:link,
+.btn:visited{
+    padding: 15px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 40px;
+    border-radius: 100px;
+    transition: all .2s;
+}
+
+
+
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .4);  /* X-shadow, Y-shadow, blur, color of the shadow */
+}
+
+.btn:active{                    /*When clicked*/
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .4);
+}
