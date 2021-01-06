@@ -1,12 +1,13 @@
-@use 'style' as s;
+@use '../_style.scss' as s;
 
 .header{
+    
     height: 95vh;
     background-size: cover;
     background-image: linear-gradient(
         to right bottom,
         rgba(s.$color-primary, 0.8),
-        rgba(#E61A1A, 0.8)),
+        rgba(s.$color-secondary, 0.8)),
         url(./simi.jpg);
     background-position: center;
     clip-path: polygon(0 0, 100% 0%, 100% 80vh, 0% 100%);
