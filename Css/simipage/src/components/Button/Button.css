@@ -1,71 +1,62 @@
-.btn-white{
-    background-color: white;
-    color: gray;
-}
+@charset "UTF-8";
+@use '../style' as s;
+.btn-white {
+  background-color: white;
+  color: gray; }
 
-.btn-white::after{
-    background-color: white;
-}
+.btn-white::after {
+  background-color: white; }
 
 .btn:link,
-.btn:visited{
-    padding: 1.5rem 4rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    display: inline-block;
-    margin-top: 4rem;
-    border-radius: 10rem;
-    transition: all .2s;
-    position: relative;
-    font-size: 1.6rem;
-}
+.btn:visited {
+  padding: 1.5rem 4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 4rem;
+  border-radius: 10rem;
+  transition: all .2s;
+  position: relative;
+  font-size: 1.6rem; }
 
-.btn:hover{
-    transform: translateY(-.3rem);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .4);  /* X-shadow, Y-shadow, blur, color of the shadow */
-}
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+  /* X-shadow, Y-shadow, blur, color of the shadow */ }
 
-.btn:active{                    /*When clicked*/
-    transform: translateY(-.1rem);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .4);
-}
+.btn:active {
+  /*When clicked*/
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4); }
 
-.btn::after{
-    content: "";
-    display: inline-block;
-    border-radius: 10rem;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-    top: 0px;
-    left: 0px;
-    transition: all 0.4s;
-}
+.btn::after {
+  content: "";
+  display: inline-block;
+  border-radius: 10rem;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  transition: all 0.4s; }
 
-.btn:hover::after{
-    transform: scaleX(1.4) scaleY(1.6);
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0; }
+
+.btn-animated {
+  animation-name: moveInBottom;
+  animation-delay: 0.5s;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards;
+  /*Se aplica el 0% de la animación antes del delay*/ }
+
+@keyframes moveInBottom {
+  0% {
     opacity: 0;
-}
-
-.btn-animated{
-    animation-name: moveInBottom;
-    animation-delay: 0.5s;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: backwards;  /*Se aplica el 0% de la animación antes del delay*/
-}
-
-
-@keyframes moveInBottom{
-    0%{
-        opacity: 0;
-        transform: translateY(3rem);
-    }
-
-    100%{
-        transform: translate(0);
-        opacity: 1;
-    }
-}
-
+    transform: translateY(3rem); }
+  100% {
+    transform: translate(0);
+    opacity: 1; } }
