@@ -20,17 +20,7 @@ body {
   color: #777;
 }
 
-.btn-white {
-  background-color: white;
-  color: gray;
-}
-
-.btn-white::after {
-  background-color: white;
-}
-
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
   padding: 1.5rem 4rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -41,19 +31,20 @@ body {
   position: relative;
   font-size: 1.6rem;
 }
-
 .btn:hover {
   transform: translateY(-0.3rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
   /* X-shadow, Y-shadow, blur, color of the shadow */
 }
-
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
 .btn:active {
   /*When clicked*/
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
 }
-
 .btn::after {
   content: "";
   display: inline-block;
@@ -66,12 +57,13 @@ body {
   left: 0px;
   transition: all 0.4s;
 }
-
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
+.btn-white {
+  background-color: white;
+  color: grey;
 }
-
+.btn-white::after {
+  background-color: white;
+}
 .btn-animated {
   animation-name: moveInBottom;
   animation-delay: 0.5s;
