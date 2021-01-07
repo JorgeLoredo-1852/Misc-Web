@@ -12,7 +12,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "compile:sass": "sass --watch src/components/_style.scss:src/components/style.css src/components/Button/_Button.scss:src/components/Button/Button.css src/components/Header/_Header.scss:src/components/Header/Header.css",
+    "compile:sass": "sass --watch src/components/_style.scss:src/components/style.css src/components/Button/_Button.scss:src/components/Button/Button.css src/components/Header/_Header.scss:src/components/Header/Header.css  src/components/About/_About.scss:src/components/About/_About.css " ,
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

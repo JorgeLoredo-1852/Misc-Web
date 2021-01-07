@@ -48,4 +48,25 @@ body {
   margin-right: 6rem;
 }
 
-/*# sourceMappingURL=style.css.map */
+.about-section {
+  margin-top: -15vh;
+  background-color: #e1e1e6;
+  padding: 15rem 0;
+}
+.about-section-heading {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #E61A1A, #2A54DD);
+  display: inline-block;
+  background-clip: text;
+  color: transparent;
+  transition: all 0.4s;
+  letter-spacing: 2px;
+}
+.about-section-heading:hover {
+  transform: skewY(3deg);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+/*# sourceMappingURL=_About.css.map */
