@@ -86,7 +86,7 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  background-image: linear-gradient(to right, #ff0000, #003cff);
+  background-image: linear-gradient(to right, #e60505, #0330c4);
   display: inline-block;
   background-clip: text;
   color: transparent;
@@ -142,6 +142,13 @@ body {
 .btn-white::after {
   background-color: white;
 }
+.btn-blue {
+  background-color: #e60505;
+  color: white;
+}
+.btn-blue::after {
+  background-color: #e60505;
+}
 .btn-animated {
   animation-name: moveInBottom;
   animation-delay: 0.5s;
@@ -152,15 +159,15 @@ body {
 }
 
 .btn-text:link, .btn-text:visited {
-  color: #003cff;
+  color: #0330c4;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #003cff;
+  border-bottom: 1px solid #0330c4;
   font-size: 1.2rem;
 }
 .btn-text:hover {
   color: #e1e1e6;
-  background-color: #003cff;
+  background-color: #0330c4;
   padding: 3px;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   transform: translateY(-2px);

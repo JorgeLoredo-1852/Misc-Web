@@ -85,7 +85,7 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  background-image: linear-gradient(to right, #ff0000, #003cff);
+  background-image: linear-gradient(to right, #e60505, #0330c4);
   display: inline-block;
   background-clip: text;
   color: transparent;
@@ -101,6 +101,7 @@ body {
   background-color: #e1e1e6;
   padding: 25rem 6%;
   margin-top: -12rem;
+  height: 100rem;
 }
 
 .card {
@@ -129,13 +130,13 @@ body {
   transform: rotateY(180deg);
 }
 .card__side--back-blue {
-  background-image: linear-gradient(to right bottom, #003cff, #6f00ff);
+  background-image: linear-gradient(to right bottom, #0330c4, #6f00ff);
 }
 .card__side--back-both {
   background-image: linear-gradient(to right bottom, #9156ff, #30ecec);
 }
 .card__side--back-red {
-  background-image: linear-gradient(to right bottom, #ff0000, #ff0077);
+  background-image: linear-gradient(to right bottom, #e60505, #ff0077);
 }
 .card:hover .card__side--front {
   transform: rotateY(-180deg);
@@ -151,14 +152,14 @@ body {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 .card__picture-blue {
-  background-image: linear-gradient(to right bottom, rgba(0, 60, 255, 0.4), rgba(111, 0, 255, 0.4)), url("./otro.jpg");
+  background-image: linear-gradient(to right bottom, rgba(3, 48, 196, 0.4), rgba(111, 0, 255, 0.4)), url("./otro.jpg");
 }
 .card__picture-both {
   background-image: linear-gradient(to right bottom, rgba(145, 86, 255, 0.4), rgba(48, 236, 236, 0.4)), url("./galan.jpg");
 }
 .card__picture-red {
   background-size: 30rem;
-  background-image: linear-gradient(to right bottom, rgba(255, 0, 0, 0.4), rgba(255, 0, 119, 0.4)), url("./navideno.jpg");
+  background-image: linear-gradient(to right bottom, rgba(230, 5, 5, 0.4), rgba(255, 0, 119, 0.4)), url("./navideno.jpg");
 }
 .card__heading {
   color: white;
@@ -183,15 +184,16 @@ body {
 .card__headingwrap {
   padding: 0.5rem 1rem;
   -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 .card__headingwrap-blue {
-  background-image: linear-gradient(to right bottom, rgba(0, 60, 255, 0.9), rgba(111, 0, 255, 0.9));
+  background-image: linear-gradient(to right bottom, rgba(3, 48, 196, 0.9), rgba(111, 0, 255, 0.9));
 }
 .card__headingwrap-both {
   background-image: linear-gradient(to right bottom, rgba(145, 86, 255, 0.9), rgba(48, 236, 236, 0.9));
 }
 .card__headingwrap-red {
-  background-image: linear-gradient(to right bottom, rgba(255, 0, 0, 0.9), rgba(255, 0, 119, 0.9));
+  background-image: linear-gradient(to right bottom, rgba(230, 5, 5, 0.9), rgba(255, 0, 119, 0.9));
 }
 .card__text {
   font-size: 1.4rem;
@@ -207,6 +209,26 @@ body {
 }
 .card__text ul li:not(:last-child) {
   border-bottom: 1px solid #e1e1e6;
+}
+.card__cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+.card__cta-price {
+  text-align: center;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+.card__cta .only_price {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+.card__cta .actual_price {
+  font-size: 5rem;
+  font-weight: 100;
 }
 
 /*# sourceMappingURL=Tours.css.map */

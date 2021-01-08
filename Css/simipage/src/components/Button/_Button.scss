@@ -51,6 +51,15 @@
             background-color: s.$color-white;
         }
     }
+
+    &-blue{
+        background-color: s.$color-primary;
+        color: s.$color-white;
+
+        &::after{
+            background-color: s.$color-primary;
+        }
+    }
     
     &-animated{
         animation-name: moveInBottom;

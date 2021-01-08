@@ -4,6 +4,7 @@ import Header from './Header/Header';
 import About from './About/About';
 import { Feature } from './Feature/Feature';
 import { Tours } from './Tours/Tours';
+import { Stories } from './Stories/Stories';
 
 const App = () =>{
     return(
@@ -12,6 +13,7 @@ const App = () =>{
             <About/>
             <Feature/>
             <Tours/>
+            <Stories/>
         </React.Fragment>
     );
 };

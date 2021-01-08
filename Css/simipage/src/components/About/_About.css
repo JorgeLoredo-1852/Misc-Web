@@ -85,7 +85,7 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  background-image: linear-gradient(to right, #ff0000, #003cff);
+  background-image: linear-gradient(to right, #e60505, #0330c4);
   display: inline-block;
   background-clip: text;
   color: transparent;
@@ -128,7 +128,7 @@ body {
   top: 10rem;
 }
 .composition__photo:hover {
-  outline: 1rem solid #003cff;
+  outline: 1rem solid #0330c4;
   z-index: 20;
   box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.6);
   transform: scale(1.1) translateY(-0.5rem);

@@ -85,7 +85,7 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  background-image: linear-gradient(to right, #ff0000, #003cff);
+  background-image: linear-gradient(to right, #e60505, #0330c4);
   display: inline-block;
   background-clip: text;
   color: transparent;
@@ -99,7 +99,7 @@ body {
 
 .section_features {
   padding: 15rem 6%;
-  background-image: linear-gradient(to right bottom, rgba(255, 0, 0, 0.8), rgba(0, 60, 255, 0.8)), url(./muchoSimi.jpg);
+  background-image: linear-gradient(to right bottom, rgba(230, 5, 5, 0.8), rgba(3, 48, 196, 0.8)), url(./muchoSimi.jpg);
   margin-top: -4.5rem;
   transform: skewY(-5deg);
 }
@@ -119,7 +119,7 @@ body {
 }
 .section_features .feature-box .icon-style {
   font-size: 5rem;
-  background-image: linear-gradient(to right, #ff0000, #003cff);
+  background-image: linear-gradient(to right, #e60505, #0330c4);
   background-clip: text;
   color: transparent;
 }

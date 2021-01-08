@@ -1,19 +1,32 @@
 import React from 'react';
 import './Tours.css';
+import Button from '../Button/Button';
 
 const Card1 = {
     color:"both",
-    title: "Galán"
+    title: "Galán",
+    comment1: "Camarada",
+    comment2:"Tiene dos corazones",
+    comment3: "Está bien guapo",
+    costo: "$ 297"
 };
 
 const Card2 = {
     color:"red",
-    title: "Santa Claus"
+    title: "Santa Claus",
+    comment1: "Te regala cosas",
+    comment2: "Es tú papá",
+    comment3: "Huele rico",
+    costo:"$ 597"
 };
 
 const Card3 = {
     color:"blue",
-    title: "Tropical"
+    title: "Tropical",
+    comment1: "Le gusta la parranda",
+    comment2: "Tiene sombrero",
+    comment3: "Se ligó a mamá lucha",
+    costo:"$ 347"
 };
 
 export const Tours = () =>{
@@ -32,6 +45,8 @@ export const Tours = () =>{
                         <CardHover card={Card3}/>
                     </div>
                 </div>
+
+                <Button classes="btn btn-blue" title="Cónocelos a todos"/>
             </div>
         </section>
     );
@@ -50,14 +65,20 @@ export const CardHover = ({card}) =>{
                     </h4>
                 <div className="card__text">
                     <ul>
-                        <li>Camarada</li>
-                        <li>Tiene dos corazones</li>
-                        <li>Está bien guapo</li>
+                        <li>{card.comment1}</li>
+                        <li>{card.comment2}</li>
+                        <li>{card.comment3}</li>
                     </ul>
                 </div>
             </div>
             <div className={"card__side card__side--back card__side--back-" + card.color}>
-                back
+                <div className="card__cta">
+                    <div className = "card__cta-price">
+                        <p className="only_price">Costo:</p>
+                        <p className="actual_price">{card.costo}</p>
+                    </div>
+                    <Button classes="btn btn-white" title="Llama Ya!"/>
+                </div>
             </div>
         </div>
     );
