@@ -1,0 +1,26 @@
+@use '../style' as s;
+
+.section_features{
+    
+    padding: 15rem 6%;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(s.$color-primary, 0.8),
+        rgba(s.$color-secondary, 0.8)),
+        url(./muchoSimi.jpg);
+
+    .feature-box{
+        padding: 2.5rem;
+        background-color: rgba(s.$color-white,.8);
+        text-align: center;
+        border-radius: 3px;
+        box-shadow: 0 1rem 2rem rgba(s.$color-black, .2);
+
+        .icon-style{
+            font-size: 5rem;
+            background-image: linear-gradient(to right, s.$color-primary, s.$color-secondary );
+            background-clip: text;
+            color:transparent;
+        }
+    }
+}
