@@ -24,16 +24,24 @@ body {
   text-align: center;
 }
 
-.u-margin-bottom-8 {
-  margin-bottom: 8rem;
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 7rem;
 }
 
 .row {
-  margin: 0 auto;
   max-width: 114rem;
-}
-.row:not(:last-child) {
-  margin-bottom: 8rem;
+  margin: 0 auto;
+  /*  &:not(:last-child){
+        margin-bottom: 8rem;
+    } */
 }
 .row::after {
   content: "";
@@ -51,7 +59,7 @@ body {
 .about-section {
   margin-top: -15vh;
   background-color: #e1e1e6;
-  padding: 15rem 0;
+  padding: 15rem 6%;
 }
 .about-section-heading {
   font-size: 3.5rem;
@@ -67,6 +75,49 @@ body {
 .about-section-heading:hover {
   transform: skewY(3deg);
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.about-section .about-text-heading {
+  font-size: 1.6em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.about-section .about-text {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.composition {
+  position: relative;
+}
+.composition__photo {
+  width: 55%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.6);
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+  transition: all 0.2s;
+  outline-offset: 1.5rem;
+}
+.composition__photo--p1 {
+  top: -2rem;
+  left: 0;
+}
+.composition__photo--p2 {
+  top: 2rem;
+  right: 0;
+}
+.composition__photo--p3 {
+  left: 10%;
+  top: 10rem;
+}
+.composition__photo:hover {
+  outline: 1rem solid #2A54DD;
+  z-index: 20;
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.6);
+  transform: scale(1.1) translateY(-0.5rem);
+}
+.composition:hover .composition__photo:not(:hover) {
+  transform: scale(0.93);
 }
 
 /*# sourceMappingURL=_About.css.map */

@@ -3,7 +3,7 @@
 .about-section{
     margin-top: -15vh;
     background-color: s.$color-grey-light-1;
-    padding: 15rem 0;
+    padding: 15rem 6%;
 
     &-heading{
         font-size: 3.5rem;
@@ -20,5 +20,62 @@
             transform: skewY(3deg);
             text-shadow: .5rem 1rem 2rem rgba(s.$color-black, .2);
         }
+    }
+
+    .about-text-heading{
+        font-size: 1.6em;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .about-text{
+        font-size: 1.2rem;
+ //       &:not(:last-child){
+            margin-bottom: 3rem;
+        }
+ //   }
+
+}
+
+.composition{
+
+    position: relative;
+
+    &__photo{
+        width: 55%;
+        box-shadow: 0 1.5rem 4rem rgba(s.$color-black,.6);
+        border-radius: 2px;
+        position: absolute;
+        z-index: 10;
+        transition: all .2s;
+        outline-offset: 1.5rem;
+
+        &--p1{
+            top: -2rem;
+            left: 0;
+        }
+
+        &--p2{
+            top: 2rem;
+            right: 0;
+        }
+
+        &--p3{
+            left: 10%;
+            top: 10rem;
+        }
+
+        &:hover{
+            outline: 1rem solid s.$color-secondary;
+            z-index: 20;
+            box-shadow: 0 2.5rem 4rem rgba(s.$color-black,.6);
+            transform: scale(1.1) translateY(-.5rem);
+            
+        }
+    }
+
+    &:hover &__photo:not(:hover){
+        transform: scale(.93);
+
     }
 }

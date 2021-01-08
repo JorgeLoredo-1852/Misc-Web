@@ -63,6 +63,29 @@
 }
 
 
+.btn-text{
+    &:link, &:visited{
+        color: s.$color-secondary;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid s.$color-secondary;
+        font-size: 1.2rem;
+    }
+
+    &:hover{
+        color: s.$color-grey-light-1;
+        background-color: s.$color-secondary;
+        padding: 3px;
+        box-shadow: 0 1rem 2rem rgba(s.$color-black, .2);
+        transform: translateY(-2px);
+    }
+
+    &:active{
+        transform: translateY(2px);
+    }
+
+}
+
 
 
 

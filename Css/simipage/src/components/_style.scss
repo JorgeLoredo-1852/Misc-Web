@@ -33,6 +33,9 @@ $color-white : white;
 $color-dark-grey: grey;
 $color-black: black;
 
+//FONTS
+
+$default-font-sixe: 1.6rem;
 
 //MIXINS
 
@@ -48,19 +51,20 @@ $color-black: black;
 //UTILITIES
 
 .u-center-content { text-align: center; }
-.u-margin-bottom-8{ margin-bottom: 8rem; }
-
+.u-margin-bottom-small { margin-bottom: 1.5rem; }
+.u-margin-bottom-medium { margin-bottom: 4rem; }
+.u-margin-bottom-big{ margin-bottom: 7rem; }
 
 
 //GRID SYSTEM
 
 .row {
-    margin: 0 auto;
     max-width: 114rem;
-
-    &:not(:last-child){
+    margin: 0 auto;
+    
+  /*  &:not(:last-child){
         margin-bottom: 8rem;
-    }
+    } */
 
     @include clearfix();
 

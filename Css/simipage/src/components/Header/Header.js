@@ -15,7 +15,7 @@ const Header = () =>{
                     <span className="text-primary-sub">Club de fans oficial</span>
                 </h1>
                 
-                <Button classes = "btn btn-white btn-animated"/>
+                <Button classes = "btn btn-white btn-animated" title="Mira la colección"/>
             </div>
         </div>
     );
