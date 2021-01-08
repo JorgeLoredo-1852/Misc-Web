@@ -20,7 +20,6 @@
         width: 100%;
         border-radius: 3px;
         overflow: hidden;               //Apply the border radius in the image
-        color: white;
         transition: all .8s;
         backface-visibility: hidden;
         box-shadow: 0 2rem 4rem rgba(s.$color-black, .15);
@@ -88,6 +87,72 @@
             background-image: linear-gradient(to right bottom,rgba(s.$color-primary,.4),rgba(s.$color-primary-2,.4)),
                                 url("./navideno.jpg");
         }
+    }
+
+    &__heading{
+        color: s.$color-white;
+        position: absolute;
+        text-align: right;
+        font-size: 2.3rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        
+        
+
+        &-blue{
+            top:1rem;
+        left: 1rem;
+        }
+
+        &-both{
+            top:1rem;
+        left: 1rem;
+        }
+
+        &-red{
+            top:17rem;
+            right: 1rem;
+           
+        }
+
+    }
+
+    &__headingwrap{
+        padding: .5rem 1rem;
+        -webkit-box-decoration-break: clone;
+
+        &-blue{
+            background-image: linear-gradient(to right bottom, rgba(s.$color-secondary,.9),rgba(s.$color-secondary-2,.9));
+        }
+
+        &-both{
+            background-image: linear-gradient(to right bottom,rgba(s.$color-tertiary,.9),rgba(s.$color-tertiary-2,.9));
+        }
+
+        &-red{
+            background-image: linear-gradient(to right bottom,rgba(s.$color-primary,.9),rgba(s.$color-primary-2,.9));
+
+        }
+    }
+
+    &__text{
+        font-size: 1.4rem;
+        
+        ul{
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li{
+                text-align: center;
+                padding: .9rem;
+
+                &:not(:last-child){
+                    border-bottom: 1px solid s.$color-grey-light-1 ;
+                }
+            }
+        }
+
     }
 }
 

@@ -117,7 +117,6 @@ body {
   width: 100%;
   border-radius: 3px;
   overflow: hidden;
-  color: white;
   transition: all 0.8s;
   backface-visibility: hidden;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15);
@@ -160,6 +159,54 @@ body {
 .card__picture-red {
   background-size: 30rem;
   background-image: linear-gradient(to right bottom, rgba(255, 0, 0, 0.4), rgba(255, 0, 119, 0.4)), url("./navideno.jpg");
+}
+.card__heading {
+  color: white;
+  position: absolute;
+  text-align: right;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.card__heading-blue {
+  top: 1rem;
+  left: 1rem;
+}
+.card__heading-both {
+  top: 1rem;
+  left: 1rem;
+}
+.card__heading-red {
+  top: 17rem;
+  right: 1rem;
+}
+.card__headingwrap {
+  padding: 0.5rem 1rem;
+  -webkit-box-decoration-break: clone;
+}
+.card__headingwrap-blue {
+  background-image: linear-gradient(to right bottom, rgba(0, 60, 255, 0.9), rgba(111, 0, 255, 0.9));
+}
+.card__headingwrap-both {
+  background-image: linear-gradient(to right bottom, rgba(145, 86, 255, 0.9), rgba(48, 236, 236, 0.9));
+}
+.card__headingwrap-red {
+  background-image: linear-gradient(to right bottom, rgba(255, 0, 0, 0.9), rgba(255, 0, 119, 0.9));
+}
+.card__text {
+  font-size: 1.4rem;
+}
+.card__text ul {
+  list-style: none;
+  width: 80%;
+  margin: 0 auto;
+}
+.card__text ul li {
+  text-align: center;
+  padding: 0.9rem;
+}
+.card__text ul li:not(:last-child) {
+  border-bottom: 1px solid #e1e1e6;
 }
 
 /*# sourceMappingURL=Tours.css.map */
