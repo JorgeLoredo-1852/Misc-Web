@@ -10,17 +10,17 @@ export const Feature = () => {
                     title="Explora el mundo" 
                     description="Acompaña al dr Simi a través de todo el universo conocido y desconocido. No tengas miedo extraño viajero."/>
                 <Card 
-                     fonticon="icon-basic-world" 
-                     title="Explora el mundo" 
-                     description="Acompaña al dr Simi a través de todo el universo conocido y desconocido. No tengas miedo extraño viajero."/>
+                     fonticon="icon-basic-compass" 
+                     title="Encuentra tu camino" 
+                     description="Busca tu lugar en el mundo y explota tu habilidades y fortalezas mediante una gran comunidad."/>
                 <Card 
-                    fonticon="icon-basic-world" 
-                    title="Explora el mundo" 
-                    description="Acompaña al dr Simi a través de todo el universo conocido y desconocido. No tengas miedo extraño viajero."/>
+                    fonticon="icon-basic-map" 
+                    title="Viaja a donde tú quieras" 
+                    description="Con una botarga del Dr. Simi como acompañante, no importa de donde vengas sino a donde vas"/>
                 <Card 
-                     fonticon="icon-basic-world" 
-                     title="Explora el mundo" 
-                     description="Acompaña al dr Simi a través de todo el universo conocido y desconocido. No tengas miedo extraño viajero."/>        
+                     fonticon="icon-basic-heart" 
+                     title="Encuentra a tu persona especial" 
+                     description="Piensa que detrás de la botarga hay una persona dispuesta a amar, dales la oportunidad de hacerlo."/>        
             </div>
         </div>
     );

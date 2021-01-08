@@ -55,12 +55,19 @@ body {
 .row .col-1-of-2:not(:last-child) {
   margin-right: 6rem;
 }
+.row .col-1-of-3 {
+  float: left;
+  width: calc(( 100% - 4rem*2) / 3);
+}
+.row .col-1-of-3:not(:last-child) {
+  margin-right: 4rem;
+}
 .row .col-1-of-4 {
   float: left;
-  width: calc(( 100% - 6rem*3) / 4);
+  width: calc(( 100% - 4rem*3) / 4);
 }
 .row .col-1-of-4:not(:last-child) {
-  margin-right: 6rem;
+  margin-right: 4rem;
 }
 
 .about-text-heading {
@@ -72,6 +79,22 @@ body {
 .about-text {
   font-size: 1rem;
   margin-bottom: 3rem;
+}
+
+.about-section-heading {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #ff0000, #003cff);
+  display: inline-block;
+  background-clip: text;
+  color: transparent;
+  transition: all 0.4s;
+  letter-spacing: 2px;
+}
+.about-section-heading:hover {
+  transform: skewY(3deg);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,6 +3,7 @@ import './style.css';
 import Header from './Header/Header';
 import About from './About/About';
 import { Feature } from './Feature/Feature';
+import { Tours } from './Tours/Tours';
 
 const App = () =>{
     return(
@@ -10,6 +11,7 @@ const App = () =>{
             <Header/>
             <About/>
             <Feature/>
+            <Tours/>
         </React.Fragment>
     );
 };

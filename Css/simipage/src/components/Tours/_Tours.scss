@@ -1,0 +1,66 @@
+@use '../style' as s;
+
+.tours{
+    background-color: s.$color-grey-light-1;
+    padding: 25rem 6%;
+    margin-top: -12rem;
+}
+
+.card{
+    perspective: 140rem;
+    -moz-perspective: 140rem;
+    margin-top: 6rem;
+    height: 30rem;
+
+    &__side{
+        position:absolute;
+        top:0;
+        left:0;
+        height: 30rem;
+        width: 100%;
+        color: white;
+        transition: all .8s;
+        backface-visibility: hidden;
+        box-shadow: 0 2rem 4rem rgba(s.$color-black, .15);
+
+        &--front{
+            background-color: s.$color-white;
+        }
+
+        &--back{
+            background-color: green;
+            transform: rotateY(180deg);
+
+            &-blue{
+                background-image: linear-gradient(
+                    to right bottom,
+                    rgba(s.$color-secondary, 0.8),
+                    rgba(s.$color-secondary-2, 0.8)),
+            }
+
+            &-both{
+                background-image: linear-gradient(
+                    to right bottom,
+                    rgba(s.$color-tertiary, 0.8),
+                    rgba(s.$color-tertiary-2, 0.8)),
+            }
+
+            &-red{
+                background-image: linear-gradient(
+                    to right bottom,
+                    rgba(s.$color-primary, 0.8),
+                    rgba(s.$color-primary-2, 0.8)),
+            }
+        }
+    }
+
+
+    &:hover &__side--front{
+        transform: rotateY(180deg);
+    }
+
+    &:hover &__side--back{
+        transform: rotateY(0);
+    }
+}
+

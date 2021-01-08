@@ -97,31 +97,50 @@ body {
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
-.section_features {
-  padding: 15rem 6%;
-  background-image: linear-gradient(to right bottom, rgba(255, 0, 0, 0.8), rgba(0, 60, 255, 0.8)), url(./muchoSimi.jpg);
-  margin-top: -4.5rem;
-  transform: skewY(-5deg);
-}
-.section_features > * {
-  transform: skewY(5deg);
-}
-.section_features .feature-box {
-  padding: 2.5rem;
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  border-radius: 3px;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s;
-}
-.section_features .feature-box:hover {
-  transform: scale(1.05) translateY(-2rem);
-}
-.section_features .feature-box .icon-style {
-  font-size: 5rem;
-  background-image: linear-gradient(to right, #ff0000, #003cff);
-  background-clip: text;
-  color: transparent;
+.tours {
+  background-color: #e1e1e6;
+  padding: 25rem 6%;
+  margin-top: -12rem;
 }
 
-/*# sourceMappingURL=Feature.css.map */
+.card {
+  perspective: 140rem;
+  -moz-perspective: 140rem;
+  margin-top: 6rem;
+  height: 30rem;
+}
+.card__side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30rem;
+  width: 100%;
+  color: white;
+  transition: all 0.8s;
+  backface-visibility: hidden;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15);
+}
+.card__side--front {
+  background-color: white;
+}
+.card__side--back {
+  background-color: green;
+  transform: rotateY(180deg);
+}
+.card__side--back-blue {
+  background-image: linear-gradient(to right bottom, rgba(0, 60, 255, 0.8), rgba(111, 0, 255, 0.8));
+}
+.card__side--back-both {
+  background-image: linear-gradient(to right bottom, rgba(134, 255, 86, 0.8), rgba(48, 236, 158, 0.8));
+}
+.card__side--back-red {
+  background-image: linear-gradient(to right bottom, rgba(255, 0, 0, 0.8), rgba(255, 0, 119, 0.8));
+}
+.card:hover .card__side--front {
+  transform: rotateY(180deg);
+}
+.card:hover .card__side--back {
+  transform: rotateY(0);
+}
+
+/*# sourceMappingURL=Tours.css.map */
