@@ -2,12 +2,12 @@ import React from 'react';
 import './Tours.css';
 
 const Card1 = {
-    color:"red",
+    color:"both",
     title: "TEXTO"
 };
 
 const Card2 = {
-    color:"both",
+    color:"red",
     title: "TEXTO"
 };
 
@@ -42,7 +42,15 @@ export const CardHover = ({card}) =>{
     return(
         <div className="card">
             <div className={"card__side card__side--front card__side--front-" + card.color}>
-                front
+                <div className= {"card__picture card__picture-" + card.color}>
+                    
+                </div>
+                <div className="card__heading">
+
+                </div>
+                <div className="card__text">
+
+                </div>
             </div>
             <div className={"card__side card__side--back card__side--back-" + card.color}>
                 back

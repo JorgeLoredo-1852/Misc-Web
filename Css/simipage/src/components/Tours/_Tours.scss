@@ -10,14 +10,16 @@
     perspective: 140rem;
     -moz-perspective: 140rem;
     margin-top: 6rem;
-    height: 30rem;
+    height: 40rem;
 
     &__side{
         position:absolute;
         top:0;
         left:0;
-        height: 30rem;
+        height: 35rem;
         width: 100%;
+        border-radius: 3px;
+        overflow: hidden;               //Apply the border radius in the image
         color: white;
         transition: all .8s;
         backface-visibility: hidden;
@@ -34,33 +36,58 @@
             &-blue{
                 background-image: linear-gradient(
                     to right bottom,
-                    rgba(s.$color-secondary, 0.8),
-                    rgba(s.$color-secondary-2, 0.8)),
+                    s.$color-secondary,
+                    s.$color-secondary-2)
             }
 
             &-both{
                 background-image: linear-gradient(
                     to right bottom,
-                    rgba(s.$color-tertiary, 0.8),
-                    rgba(s.$color-tertiary-2, 0.8)),
+                    s.$color-tertiary,
+                    s.$color-tertiary-2)
             }
 
             &-red{
                 background-image: linear-gradient(
                     to right bottom,
-                    rgba(s.$color-primary, 0.8),
-                    rgba(s.$color-primary-2, 0.8)),
+                    s.$color-primary,
+                    s.$color-primary-2)
             }
         }
     }
 
 
     &:hover &__side--front{
-        transform: rotateY(180deg);
+        transform: rotateY(-180deg);
     }
 
     &:hover &__side--back{
         transform: rotateY(0);
+    }
+
+    &__picture{
+        height: 21rem;
+        background-size: 30rem;
+        background-blend-mode: saturation;
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        &-blue{
+            background-image: linear-gradient(to right bottom, rgba(s.$color-secondary,.4),rgba(s.$color-secondary-2,.4)), 
+                                url("./otro.jpg");
+            
+            
+        }
+
+        &-both{
+            background-image: linear-gradient(to right bottom,rgba(s.$color-tertiary,.4),rgba(s.$color-tertiary-2,.4)),
+                                 url("./galan.jpg");
+        }
+
+        &-red{
+            background-size: 30rem;
+            background-image: linear-gradient(to right bottom,rgba(s.$color-primary,.4),rgba(s.$color-primary-2,.4)),
+                                url("./navideno.jpg");
+        }
     }
 }
 

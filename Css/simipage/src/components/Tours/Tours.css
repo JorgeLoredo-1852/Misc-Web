@@ -107,14 +107,16 @@ body {
   perspective: 140rem;
   -moz-perspective: 140rem;
   margin-top: 6rem;
-  height: 30rem;
+  height: 40rem;
 }
 .card__side {
   position: absolute;
   top: 0;
   left: 0;
-  height: 30rem;
+  height: 35rem;
   width: 100%;
+  border-radius: 3px;
+  overflow: hidden;
   color: white;
   transition: all 0.8s;
   backface-visibility: hidden;
@@ -128,19 +130,36 @@ body {
   transform: rotateY(180deg);
 }
 .card__side--back-blue {
-  background-image: linear-gradient(to right bottom, rgba(0, 60, 255, 0.8), rgba(111, 0, 255, 0.8));
+  background-image: linear-gradient(to right bottom, #003cff, #6f00ff);
 }
 .card__side--back-both {
-  background-image: linear-gradient(to right bottom, rgba(134, 255, 86, 0.8), rgba(48, 236, 158, 0.8));
+  background-image: linear-gradient(to right bottom, #9156ff, #30ecec);
 }
 .card__side--back-red {
-  background-image: linear-gradient(to right bottom, rgba(255, 0, 0, 0.8), rgba(255, 0, 119, 0.8));
+  background-image: linear-gradient(to right bottom, #ff0000, #ff0077);
 }
 .card:hover .card__side--front {
-  transform: rotateY(180deg);
+  transform: rotateY(-180deg);
 }
 .card:hover .card__side--back {
   transform: rotateY(0);
+}
+.card__picture {
+  height: 21rem;
+  background-size: 30rem;
+  background-blend-mode: saturation;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+.card__picture-blue {
+  background-image: linear-gradient(to right bottom, rgba(0, 60, 255, 0.4), rgba(111, 0, 255, 0.4)), url("./otro.jpg");
+}
+.card__picture-both {
+  background-image: linear-gradient(to right bottom, rgba(145, 86, 255, 0.4), rgba(48, 236, 236, 0.4)), url("./galan.jpg");
+}
+.card__picture-red {
+  background-size: 30rem;
+  background-image: linear-gradient(to right bottom, rgba(255, 0, 0, 0.4), rgba(255, 0, 119, 0.4)), url("./navideno.jpg");
 }
 
 /*# sourceMappingURL=Tours.css.map */
