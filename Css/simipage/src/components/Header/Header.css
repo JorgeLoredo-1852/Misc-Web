@@ -78,7 +78,9 @@ body {
 }
 
 .about-text {
-  font-size: 1rem;
+  font-size: 1.2rem;
+}
+.about-text:not(:last-child) {
   margin-bottom: 3rem;
 }
 

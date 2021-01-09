@@ -109,11 +109,11 @@ $default-font-sixe: 1.6rem;
 }
 
 .about-text{
-    font-size: 1rem;
-//       &:not(:last-child){
+    font-size: 1.2rem;
+   &:not(:last-child){
         margin-bottom: 3rem;
     }
-//   }
+   }
 
 .about-section-heading{
     font-size: 3.5rem;

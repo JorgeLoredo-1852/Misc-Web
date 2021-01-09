@@ -16,11 +16,11 @@ export const Feature = () => {
                 <Card 
                     fonticon="icon-basic-map" 
                     title="Viaja a donde tú quieras" 
-                    description="Con una botarga del Dr. Simi como acompañante, no importa de donde vengas sino a donde vas"/>
+                    description="Con una botarga del Dr. Simi como acompañante, no importa de donde vengas sino a donde vas. Teamo."/>
                 <Card 
                      fonticon="icon-basic-heart" 
                      title="Encuentra a tu persona especial" 
-                     description="Piensa que detrás de la botarga hay una persona dispuesta a amar, dales la oportunidad de hacerlo."/>        
+                     description="Piensa que detrás de cada botarga se encuentra una persona dispuesta a amar, dales la oportunidad de hacerlo."/>        
             </div>
         </div>
     );
