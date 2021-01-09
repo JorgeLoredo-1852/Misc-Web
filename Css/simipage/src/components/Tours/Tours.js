@@ -32,7 +32,7 @@ const Card3 = {
 export const Tours = () =>{
     return(
         <section className="tours">
-            <div className= "u-center-content u-margin-bottom-big">
+            <div className= "u-center-content u-margin-bottom-small">
                 <h2 className="about-section-heading">Personalidades múltiples</h2>
                 <div className="row">
                     <div className="col-1-of-3">
